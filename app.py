@@ -132,4 +132,3 @@ if st.button("Submit"):
 
 st.markdown("***")
 st.markdown("This is an implementation of the prompt engineering technique 'Translation Augmented Generation' presented in LF AI Summit.")
-```
