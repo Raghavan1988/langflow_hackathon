@@ -1,3 +1,4 @@
+```python
 import streamlit as st
 import openai
 from openai import OpenAI
@@ -92,12 +93,12 @@ st.markdown("- Note: Due to challenges with custom components for Langflow, Stre
 
 mode = st.radio("Choose Mode:", ("Image Mode", "Text Mode"))
 
-language_options = ["Yoruba", "Swahili", "Hausa", "Amharic", "Igbo"]
+language_options = ["Hindi", "Arabic", "Tamil", "Yoruba", "Swahili", "Hausa", "Amharic", "Igbo"]
 selected_language = st.selectbox("Select the language:", language_options)
 
-example1 = "Omokunrin ati omobirin ti won n sere ni oko agbado ni ilu Benin"
-example2 = "Irugbin wo ni o yẹ ki o gbin lakoko ogbele ni Benin?"
-example3 = "Kini awọn ibi-ajo irin-ajo eco olokiki ni Benin?"
+example1 = "हिंदी में उदाहरण: बारिश के मौसम में खेत में काम करते किसान"
+example2 = "العربية: ما هي الأنشطة الشعبية للسياح في دبي؟"
+example3 = "தமிழ்: தமிழ் நாட்டில் உள்ள புகழ்பெற்ற கோவில்கள் என்ன?"
 st.markdown("- " + example1)
 st.markdown("- " + example2)
 st.markdown("- " + example3)
@@ -132,3 +133,4 @@ if st.button("Submit"):
 
 st.markdown("***")
 st.markdown("This is an implementation of the prompt engineering technique 'Translation Augmented Generation' presented in LF AI Summit.")
+```
