@@ -22,7 +22,7 @@ def translate_to_english(text):
 
 def detect_n_translate(english_response, original_input, language):
     response = client.chat.completions.create(
-        model="gpt-4",
+        model="gpt-4o",
         messages=[
             {"role": "system", "content": "You are a helpful translator from English to " + language},
             {"role": "user", "content": original_input + " Translate the following English content to " + language + ": English: " + english_response + " output only translated content."}
