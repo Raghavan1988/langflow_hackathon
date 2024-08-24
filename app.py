@@ -92,10 +92,10 @@ st.markdown("- Note: Due to challenges with custom components for Langflow, Stre
 
 mode = st.radio("Choose Mode:", ("Image Mode", "Text Mode"))
 
-language_options = ["Hindi", "Arabic", "Tamil", "Yoruba", "Swahili", "Hausa", "Amharic", "Igbo"]
+language_options = ["Tamil", "Arabic", "Hindi", "Yoruba", "Swahili", "Hausa", "Amharic", "Igbo"]
 selected_language = st.selectbox("Select the language:", language_options)
 
-example1 = "हिंदी में उदाहरण: बारिश के मौसम में खेत में काम करते किसान"
+example1 = "ஒரு பெண் மழையில் நாயுடன் விளையாடுகிறாள்"
 example2 = "العربية: ما هي الأنشطة الشعبية للسياح في دبي؟"
 example3 = "தமிழ்: தமிழ் நாட்டில் உள்ள புகழ்பெற்ற கோவில்கள் என்ன?"
 st.markdown("- " + example1)
