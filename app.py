@@ -84,11 +84,10 @@ def get_replicate_url(description):
     print(output)
     return output[0]
 
-st.title("Langflow Hackathon: Multi-language Support")
+st.title("Draw in any language, Ask question in any low resource language (Say Urdu, Tamil, Hindi)")
 st.markdown(" by Raghavan Muthuregunathan")
 st.markdown("- You can ask questions or generate images in any low-resource language.")
 st.markdown("- This project uses Streamlit and OpenAI for language translation and image generation.")
-st.markdown("- Note: Due to challenges with custom components for Langflow, Streamlit and OpenAI are used for this implementation.")
 
 mode = st.radio("Choose Mode:", ("Image Mode", "Text Mode"))
 
@@ -96,7 +95,7 @@ language_options = [ "Urdu", "Tamil", "Arabic", "Hindi", "Yoruba", "Swahili", "H
 selected_language = st.selectbox("Select the language:", language_options)
 
 example1 = "ஒரு பெண் மழையில் நாயுடன் விளையாடுகிறாள்"
-example2 = "العربية: ما هي الأنشطة الشعبية للسياح في دبي؟"
+example2 = "پس منظر میں ایک لڑکا ٹرین کے ساتھ بارش میں کھیل رہا ہے۔"
 example3 = "தமிழ்: தமிழ் நாட்டில் உள்ள புகழ்பெற்ற கோவில்கள் என்ன?"
 st.markdown("- " + example1)
 st.markdown("- " + example2)
