@@ -101,7 +101,7 @@ st.markdown("- " + example1)
 st.markdown("- " + example2)
 st.markdown("- " + example3)
 
-input_text = st.text_area("Enter the question or describe for image generation (Use any low-resource language):","ஒரு பெண் மழையில் நாயுடன் விளையாடுகிறாள்")
+input_text = st.text_area("Enter the question or describe for image generation (Use any low-resource language):","پس منظر میں ایک لڑکا ٹرین کے ساتھ بارش میں کھیل رہا ہے۔")
 
 if st.button("Submit"):
     if input_text:
